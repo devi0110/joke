@@ -28,6 +28,20 @@ app.post("/submit",async(req,res)=>{
     }
 });
 
+app.get("/dark",async(req,res)=>{
+    try{
+    const result=await axios.get(api_url+"dark?type=single");
+    console.log("used");
+    res.render("index.ejs", { content: result.data});
+    }
+    catch(error){
+        console.log(error.response.data);
+        res.status(404);
+
+
+    }
+});
+
 
 
 app.listen(port,()=>{

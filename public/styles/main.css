@@ -3,8 +3,7 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui,
       helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
     color: hotpink;
-    display: flex;
-    justify-content: center;
+    
   }
 
   .btn{
@@ -19,6 +18,9 @@ body {
   }
 
   .width{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
     
     width: 50%;
   }
